@@ -34,5 +34,9 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/nginx:1.26.0 docker://harbor.develop.ynlxkj.cn/iu3/nginx:1.26.0
+        skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
+        skopeo copy docker://docker.io/nacos/nacos-server:v2.2.2 docker://harbor.develop.ynlxkj.cn/public/nacos-server:v2.2.2
+        skopeo copy docker://quay.io/minio/minio:latest docker://harbor.develop.ynlxkj.cn/public/minio:latest
+        skopeo copy docker://docker.io/redis/redis-stack-server:7.0.2-RC2 docker://harbor.develop.ynlxkj.cn/public/redis-stack-server:7.0.2-RC2
+        
  
