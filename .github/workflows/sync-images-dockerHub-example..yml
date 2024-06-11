@@ -34,9 +34,23 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
-        skopeo copy docker://docker.io/nacos/nacos-server:v2.2.2 docker://harbor.develop.ynlxkj.cn/public/nacos-server:v2.2.2
-        skopeo copy docker://quay.io/minio/minio:latest docker://harbor.develop.ynlxkj.cn/public/minio:latest
-        skopeo copy docker://docker.io/redis/redis-stack-server:7.0.2-RC2 docker://harbor.develop.ynlxkj.cn/public/redis-stack-server:7.0.2-RC2
-        
- 
+        # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
+        # skopeo copy docker://docker.io/nacos/nacos-server:v2.2.2 docker://harbor.develop.ynlxkj.cn/public/nacos-server:v2.2.2
+        # skopeo copy docker://quay.io/minio/minio:latest docker://harbor.develop.ynlxkj.cn/public/minio:latest
+        # skopeo copy docker://docker.io/redis/redis-stack-server:7.0.2-RC2 docker://harbor.develop.ynlxkj.cn/public/redis-stack-server:7.0.2-RC2
+        skopeo copy docker://docker.io/istepanov/mongodump:4.4 docker://harbor.develop.ynlxkj.cn/public/mongodump:4.4
+        skopeo copy docker://docker.io/mongo:4.4.4 docker://harbor.develop.ynlxkj.cn/public/mongo:4.4.4
+        skopeo copy docker://docker.io/rabbitmq:3.9.13-management docker://harbor.develop.ynlxkj.cn/public/rabbitmq:3.9.13-management
+        skopeo copy docker://docker.io/onlyoffice/documentserver:6.2.0 docker://harbor.develop.ynlxkj.cn/public/onlyoffice/documentserver:6.2.0
+        skopeo copy docker://docker.io/phpmyadmin/phpmyadmin:5.2.0 docker://harbor.develop.ynlxkj.cn/public/phpmyadmin:5.2.0
+        skopeo copy docker://docker.io/wordpress:php7.4 docker://harbor.develop.ynlxkj.cn/public/wordpress:php7.4
+        skopeo copy docker://docker.io/filegator/filegator:v7.9.3 docker://harbor.develop.ynlxkj.cn/public/filegator:v7.9.3
+        skopeo copy docker://docker.io/pragkent/alidns-webhook:0.1.1 docker://harbor.develop.ynlxkj.cn/public/alidns-webhook:0.1.1
+        skopeo copy docker://quay.io/jetstack/cert-manager-webhook:v1.14.4 docker://harbor.develop.ynlxkj.cn/public/cert-manager-webhook:v1.14.4
+        skopeo copy docker://quay.io/jetstack/cert-manager-controller:v1.14.4 docker://harbor.develop.ynlxkj.cn/public/cert-manager-controller:v1.14.4
+        skopeo copy docker://quay.io/jetstack/cert-manager-cainjector:v1.14.4 docker://harbor.develop.ynlxkj.cn/public/cert-manager-cainjector:v1.14.4
+        skopeo copy docker://docker.io/istio/proxyv2:1.21.0 docker://harbor.develop.ynlxkj.cn/public/istio/proxyv2:1.21.0
+        skopeo copy docker://docker.io/istio/pilot:1.21.0 docker://harbor.develop.ynlxkj.cn/public/istio/pilot:1.21.0
+
+
+
