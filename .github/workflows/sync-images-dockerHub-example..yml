@@ -35,10 +35,12 @@ jobs:
       run: |
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
-        skopeo copy docker://docker.io/logstash:7.17.2 docker://harbor.develop.ynlxkj.cn/public/logstash:7.17.2
-        skopeo copy docker://docker.elastic.co/kibana/kibana:7.17.2 docker://harbor.develop.ynlxkj.cn/public/kibana:7.17.2
-        skopeo copy docker://docker.elastic.co/elasticsearch/elasticsearch:7.17.2 docker://harbor.develop.ynlxkj.cn/public/elasticsearch:7.17.2
-        skopeo copy docker://docker.elastic.co/beats/filebeat:7.17.2 docker://harbor.develop.ynlxkj.cn/public/filebeat:7.17.2
+        skopeo copy docker://docker.io/sxi3265/nfs-subdir-external-provisioner:v4.0.2 docker://harbor.develop.ynlxkj.cn/public/nfs-subdir-external-provisioner:v4.0.2
+        skopeo copy docker://docker.io/calico/kube-controllers:v3.27.2 docker://harbor.develop.ynlxkj.cn/public/calico/kube-controllers:v3.27.2
+        skopeo copy docker://docker.io/calico/cni:v3.27.2 docker://harbor.develop.ynlxkj.cn/public/calico/cni:v3.27.2
+        skopeo copy docker://skywalking.docker.scarf.sh/apache/skywalking-oap-server:9.6.0 docker://harbor.develop.ynlxkj.cn/public/skywalking-oap-server:9.6.0
+        skopeo copy docker://skywalking.docker.scarf.sh/apache/skywalking-ui:9.6.0 docker://harbor.develop.ynlxkj.cn/public/skywalking-ui:9.6.0
+        skopeo copy docker://docker.io/apache/skywalking-java-agent:9.0.0-alpine docker://harbor.develop.ynlxkj.cn/public/skywalking-java-agent:9.0.0-alpine
 
 
 
