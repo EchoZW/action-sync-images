@@ -35,7 +35,7 @@ jobs:
       run: |
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
-        skopeo copy docker://docker.io/sxi3265/jdk:1.8.0-192 docker://harbor.develop.ynlxkj.cn/public/jdk:1.8.0-192
+        skopeo copy docker://docker.io/andrewmackrodt/nodejs:16 docker://harbor.develop.ynlxkj.cn/public/nodejs:16
 
 
 
