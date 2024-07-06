@@ -36,4 +36,4 @@ jobs:
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
         # skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://harbor.develop.ynlxkj.cn/public/kube-apiserver:v1.28.2
-        skopeo copy docker://docker.io/openjdk:8-jre-slim docker://harbor.develop.ynlxkj.cn/public/openjdk:8-jre-slim
+        skopeo copy docker://docker.io/redis/redis-stack-server:7.0.2-RC2 docker://harbor.develop.ynlxkj.cn/public/redis-stack-server:7.0.2-RC2
