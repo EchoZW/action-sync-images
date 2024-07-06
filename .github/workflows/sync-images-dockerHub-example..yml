@@ -36,5 +36,4 @@ jobs:
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
         # skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://harbor.develop.ynlxkj.cn/public/kube-apiserver:v1.28.2
-        # skopeo copy docker://docker.io/jimmidyson/configmap-reload:v0.5.0 docker://harbor.develop.ynlxkj.cn/public/jimmidyson/configmap-reload:v0.5.0
-        skopeo copy docker://docker.io/mysql:8.0.28 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.28  
+        skopeo copy docker://docker.io/feiyu563/prometheus-alert:latest docker://harbor.develop.ynlxkj.cn/public/prometheus-alert:latest  
