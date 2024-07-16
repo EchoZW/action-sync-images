@@ -36,6 +36,4 @@ jobs:
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
         # skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://harbor.develop.ynlxkj.cn/public/kube-apiserver:v1.28.2
-        skopeo copy docker://docker.io/calico/node:v3.27.2 docker://harbor.develop.ynlxkj.cn/public/calico/node:v3.27.2
-        skopeo copy docker://quay.io/jetstack/cert-manager-acmesolver:v1.14.4 docker://harbor.develop.ynlxkj.cn/public/cert-manager-acmesolver:v1.14.4
-        skopeo copy docker://docker.io/istio/operator:1.21.0 docker://harbor.develop.ynlxkj.cn/public/istio/operator:1.21.0
+        skopeo copy docker://quay.io/prometheus/mysqld-exporter:v0.15.1 docker://harbor.develop.ynlxkj.cn/public/prometheus-mysqld-exporter:v0.15.1
