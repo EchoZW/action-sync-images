@@ -36,4 +36,6 @@ jobs:
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
         # skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://harbor.develop.ynlxkj.cn/public/kube-apiserver:v1.28.2
-        skopeo copy docker://quay.io/prometheus/mysqld-exporter:v0.15.0 docker://harbor.develop.ynlxkj.cn/public/prometheus-mysqld-exporter:v0.15.0
+        skopeo copy docker://docker.io/tomcat:9.0.27-jdk12-adoptopenjdk-openj9 docker://harbor.develop.ynlxkj.cn/public/tomcat:9.0.27-jdk12-adoptopenjdk-openj9
+        skopeo copy docker://docker.io/tomcat:9.0-jdk21-temurin docker://harbor.develop.ynlxkj.cn/public/tomcat:9.0-jdk21-temurin
+        skopeo copy docker://docker.io/tomcat:9.0-jdk17-temurin docker://harbor.develop.ynlxkj.cn/public/tomcat:9.0-jdk17-temurin
