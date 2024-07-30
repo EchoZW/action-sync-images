@@ -37,4 +37,4 @@ jobs:
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
         # skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://harbor.develop.ynlxkj.cn/public/kube-apiserver:v1.28.2
         # skopeo copy docker://docker.io/tomcat:9.0.91-jdk21-temurin-jammy docker://harbor.develop.ynlxkj.cn/public/tomcat:9.0.91-jdk21-temurin-jammy
-        skopeo copy docker://docker.io/apache/rocketmq:5.3.0 docker://harbor.develop.ynlxkj.cn/public/apache/rocketmq:5.3.0
+        skopeo copy docker://docker.io/styletang/rocketmq-console-ng:1.0.0 docker://harbor.develop.ynlxkj.cn/public/rocketmq-console-ng:1.0.0
