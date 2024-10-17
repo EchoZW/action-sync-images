@@ -28,7 +28,7 @@ jobs:
     #   with:
     #     registry: harbor.develop.ynlxkj.cn
     #     username: ${{ secrets.USER_NAME }}
-    #     password: ${{ secrets.USER_PASSWORD }}
+    ##     password: ${{ secrets.USER_PASSWORD }}
     ##     logout: false
         
     - name: Login to Aliyun Hub
