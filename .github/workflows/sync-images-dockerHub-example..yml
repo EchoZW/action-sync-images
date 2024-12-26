@@ -23,30 +23,30 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3.0.0
 
-    - name: Login to Harbor Hub
-      uses: docker/login-action@v3.0.0
-      with:
-        registry: harbor.develop.ynlxkj.cn
-        username: ${{ secrets.USER_NAME }}
-        password: ${{ secrets.USER_PASSWORD }}
-        logout: false
-        
-    # - name: Login to Aliyun Hub
-    #   uses: docker/login-action@v2.2.0
+    # - name: Login to Harbor Hub
+    #   uses: docker/login-action@v3.0.0
     #   with:
-    #     registry: registry.cn-hangzhou.aliyuncs.com
-    #     username: ${{ secrets.ALIYUN_USER }}
-    #     password: ${{ secrets.ALIYUN_PASSWD }}
+    #     registry: harbor.develop.ynlxkj.cn
+    #     username: ${{ secrets.USER_NAME }}
+    #     password: ${{ secrets.USER_PASSWORD }}
     #     logout: false
+        
+    - name: Login to Aliyun Hub
+      uses: docker/login-action@v2.2.0
+      with:
+        registry: registry.cn-hangzhou.aliyuncs.com
+        username: ${{ secrets.ALIYUN_USER }}
+        password: ${{ secrets.ALIYUN_PASSWD }}
+        logout: false
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
-        # skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://harbor.develop.ynlxkj.cn/public/kube-apiserver:v1.28.2
-        # skopeo copy docker://docker.io/tomcat:9.0.91-jdk21-temurin-jammy docker://harbor.develop.ynlxkj.cn/public/tomcat:9.0.91-jdk21-temurin-jammy
-        # skopeo copy docker://docker.io/bitnami/redis-cluster:7.2.5-debian-12-r0 docker://harbor.develop.ynlxkj.cn/public/redis-cluster:7.2.5-debian-12-r0
-        skopeo copy docker://docker.io/seataio/seata-server:2.0.0 docker://harbor.develop.ynlxkj.cn/public/seata-server:2.0.0
+        skopeo copy docker://docker.io/calico/cni:v3.29.1 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico/cni:v3.29.1
+        skopeo copy docker://docker.io/calico/node:v3.29.1 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico/node:v3.29.1
+        skopeo copy docker://docker.io/calico/kube-controllers:v3.29.1 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico/kube-controllers:v3.29.1
+
         
         
         
