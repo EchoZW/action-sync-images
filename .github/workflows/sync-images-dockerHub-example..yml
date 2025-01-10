@@ -43,9 +43,7 @@ jobs:
       run: |
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
-        skopeo copy docker://docker.io/calico/cni:v3.29.1 docker://harbor.develop.ynlxkj.cn/public/calico/cni:v3.29.1
-        skopeo copy docker://docker.io/calico/node:v3.29.1 docker://harbor.develop.ynlxkj.cn/public/calico/node:v3.29.1
-        skopeo copy docker://docker.io/calico/kube-controllers:v3.29.1 docker://harbor.develop.ynlxkj.cn/public/calico/kube-controllers:v3.29.1
+        skopeo copy docker://docker.io/ubuntu:24.10 docker://harbor.develop.ynlxkj.cn/public/ubuntu:24.10
 
         
         
