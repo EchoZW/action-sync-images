@@ -43,7 +43,9 @@ jobs:
       run: |
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
-        skopeo copy docker://docker.io/ubuntu:24.10 docker://harbor.develop.ynlxkj.cn/public/ubuntu:24.10
+        skopeo copy docker://docker.io/sameersbn/gitlab:17.7.1 docker://harbor.develop.ynlxkj.cn/public/gitlab:17.7.1
+        skopeo copy docker://docker.io/sameersbn/gitlab:17.6.3 docker://harbor.develop.ynlxkj.cn/public/gitlab:17.6.3
+        skopeo copy docker://docker.io/sameersbn/gitlab:17.5.5 docker://harbor.develop.ynlxkj.cn/public/gitlab:17.5.5
 
         
         
