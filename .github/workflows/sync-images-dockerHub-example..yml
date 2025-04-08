@@ -42,7 +42,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        # skopeo copy docker://docker.io/mysql:8.0.33 docker://harbor.develop.ynlxkj.cn/public/mysql:8.0.33
+        skopeo copy docker://docker.io/palidin/extmail:latest docker://registry.cn-hangzhou.aliyuncs.com/planck/extmail:latest
         # skopeo copy docker://ghcr.io/flannel-io/flannel-cni-plugin:v1.6.2-flannel1 docker://registry.cn-hangzhou.aliyuncs.com/planck/flannel-cni-plugin:v1.6.2-flannel1
         # skopeo copy docker://ghcr.io/flannel-io/flannel:v0.26.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/flannel:v0.26.4
         # skopeo copy docker://docker.io/calico/typha:v3.29.2 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-typha:v3.29.2
@@ -51,10 +51,10 @@ jobs:
         # skopeo copy docker://docker.io/calico/node-driver-registrar:v3.29.2 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-node-driver-registrar:v3.29.2
         # skopeo copy docker://docker.io/calico/pod2daemon-flexvol:v3.29.2 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-pod2daemon-flexvol:v3.29.2
         # skopeo copy docker://docker.io/calico/apiserver:v3.29.2 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-apiserver:v3.29.2
-        img_tag=v3.26.2
-        skopeo copy docker://docker.io/calico/cni:$img_tag docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-node:$img_tag
-        skopeo copy docker://docker.io/calico/node:$img_tag docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-cni:$img_tag
-        skopeo copy docker://docker.io/calico/kube-controllers:$img_tag docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-kube-controllers:$img_tag
+        # img_tag=v3.26.2
+        # skopeo copy docker://docker.io/calico/cni:$img_tag docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-node:$img_tag
+        # skopeo copy docker://docker.io/calico/node:$img_tag docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-cni:$img_tag
+        # skopeo copy docker://docker.io/calico/kube-controllers:$img_tag docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-kube-controllers:$img_tag
         
 
         
