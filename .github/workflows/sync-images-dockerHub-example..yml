@@ -43,7 +43,7 @@ jobs:
       run: |
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/alpine:3.21.3 docker://registry.cn-hangzhou.aliyuncs.com/planck/alpine:3.21.3
-        skopeo copy docker://docker.io/forresttse/dm8:latest docker://registry.cn-hangzhou.aliyuncs.com/planck/dm8:2021
+        skopeo copy docker://docker.io/liuhongtian1977/dm8:dm8_20250122_x86_rh7_64 docker://registry.cn-hangzhou.aliyuncs.com/planck/dm8:20250122
         # skopeo copy docker://ghcr.io/flannel-io/flannel-cni-plugin:v1.6.2-flannel1 docker://registry.cn-hangzhou.aliyuncs.com/planck/flannel-cni-plugin:v1.6.2-flannel1
         # skopeo copy docker://ghcr.io/flannel-io/flannel:v0.26.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/flannel:v0.26.4
         # skopeo copy docker://docker.io/calico/typha:v3.29.2 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-typha:v3.29.2
