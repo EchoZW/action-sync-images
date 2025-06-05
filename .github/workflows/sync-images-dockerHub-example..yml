@@ -43,8 +43,8 @@ jobs:
       run: |
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/alpine:3.21.3 docker://registry.cn-hangzhou.aliyuncs.com/planck/alpine:3.21.3
-        skopeo copy docker://docker.io/oraclelinux:9-slim docker://registry.cn-hangzhou.aliyuncs.com/planck//oraclelinux:9-slim
-        skopeo copy docker://docker.io/oraclelinux:7-slim docker://registry.cn-hangzhou.aliyuncs.com/planck//oraclelinux:7-slim
+        skopeo copy docker://docker.io/oraclelinux:9-slim docker://registry.cn-hangzhou.aliyuncs.com/planck/oraclelinux:9-slim
+        skopeo copy docker://docker.io/oraclelinux:7-slim docker://registry.cn-hangzhou.aliyuncs.com/planck/oraclelinux:7-slim
         # skopeo copy docker://ghcr.io/flannel-io/flannel-cni-plugin:v1.6.2-flannel1 docker://registry.cn-hangzhou.aliyuncs.com/planck/flannel-cni-plugin:v1.6.2-flannel1
         # skopeo copy docker://ghcr.io/flannel-io/flannel:v0.26.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/flannel:v0.26.4
         # skopeo copy docker://docker.io/calico/typha:v3.29.2 docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-typha:v3.29.2
