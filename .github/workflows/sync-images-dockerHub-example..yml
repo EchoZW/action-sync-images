@@ -45,7 +45,7 @@ jobs:
         # skopeo copy docker://docker.io/alpine:3.21.3 docker://registry.cn-hangzhou.aliyuncs.com/planck/alpine:3.21.3
         skopeo copy docker://docker.io/istio/proxyv2:1.24.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/istio-proxyv2:1.24.4
         skopeo copy docker://docker.io/istio/pilot:1.24.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/istio-pilot:1.24.4
-        skopeo copy docker://docker.io/istio/operator:1.24.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/istio-operator:1.24.4
+        #skopeo copy docker://docker.io/istio/operator:1.24.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/istio-operator:1.24.4
 
         # img_tag=v3.26.2
         # skopeo copy docker://docker.io/calico/cni:$img_tag docker://registry.cn-hangzhou.aliyuncs.com/planck/calico-node:$img_tag
