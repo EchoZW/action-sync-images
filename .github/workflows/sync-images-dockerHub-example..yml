@@ -44,7 +44,7 @@ jobs:
         #!/usr/bin/env bash
         # skopeo copy docker://docker.io/alpine:3.21.3 docker://registry.cn-hangzhou.aliyuncs.com/planck/alpine:3.21.3
         # skopeo copy docker://docker.io/gitlab/gitlab-runner:alpine3.19-v16.11.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/gitlab-runner:alpine3.19-v16.11.4
-        skopeo copy docker://docker.io/continuumio/anaconda3:2024.10-1-amazonlinux docker://registry.cn-hangzhou.aliyuncs.com/planck/anaconda3:2024.10-1-amazonlinux
+        skopeo copy docker://docker.io/continuumio/anaconda3:main-amazonlinux docker://registry.cn-hangzhou.aliyuncs.com/planck/anaconda3:main-amazonlinux
         # skopeo copy docker://docker.io/gitlab/gitlab-runner:alpine3.19-v16.10.1 docker://registry.cn-hangzhou.aliyuncs.com/planck/gitlab-runner:alpine3.19-v16.10.1
 
         # skopeo copy docker://docker.io/sameersbn/gitlab:16.11.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/gitlab:16.11.4
