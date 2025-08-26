@@ -49,7 +49,7 @@ jobs:
         # skopeo copy docker://docker.io/jumpserver/chen:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-chen:v4.10.5-ce
         # skopeo copy docker://docker.io/jumpserver/koko:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-koko:v4.10.5-ce
         # skopeo copy docker://docker.io/jumpserver/lion:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-lion:v4.10.5-ce
-        skopeo copy docker://docker.io/jumpserver/web:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-web:v4.10.5-ce
+        skopeo copy docker://docker.io/bitnami/postgresql:17.6.0-debian-12-r2 docker://registry.cn-hangzhou.aliyuncs.com/planck/postgresql:17.6.0-debian-12-r2
         
 
         # img_tag=v3.26.2
