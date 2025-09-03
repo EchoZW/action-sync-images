@@ -1,0 +1,21 @@
+name: Download external Helm chart
+on:
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Helm
+        uses: azure/setup-helm@v4       
+        with:
+          version: 'latest'
+
+      - name: Add & update repo
+        run: |
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+          helm repo update
+
+      - name: Download chart tarball
+        run: |
+          helm pull bitnami/nginx --version 15.1.0   # 会下载 nginx-15.1.0.tgz
