@@ -45,15 +45,7 @@ jobs:
         # skopeo copy docker://docker.io/alpine:3.21.3 docker://registry.cn-hangzhou.aliyuncs.com/planck/alpine:3.21.3
         # skopeo copy docker://docker.io/gitlab/gitlab-runner:alpine3.19-v16.11.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/gitlab-runner:alpine3.19-v16.11.4
         # skopeo copy docker://docker.io/continuumio/miniconda3:23.5.2-0-alpine docker://registry.cn-hangzhou.aliyuncs.com/planck/miniconda3:23.5.2-0-alpine
-        # skopeo copy docker://docker.io/jumpserver/core:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-core:v4.10.5-ce
-        # skopeo copy docker://docker.io/jumpserver/chen:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-chen:v4.10.5-ce
-        # skopeo copy docker://docker.io/jumpserver/koko:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-koko:v4.10.5-ce
-        # skopeo copy docker://docker.io/jumpserver/lion:v4.10.5-ce docker://registry.cn-hangzhou.aliyuncs.com/planck/jumpserver-lion:v4.10.5-ce
-        # skopeo copy docker://docker.io/postgres:16.6-alpine3.21 docker://registry.cn-hangzhou.aliyuncs.com/planck/postgres:16.6-alpine3.21
-        # skopeo copy docker://docker.io/sameersbn/gitlab:18.3.1 docker://registry.cn-hangzhou.aliyuncs.com/planck/gitlab:18.3.1
-        # skopeo copy docker://docker.io/gitlab/gitlab-runner:v18.3.0 docker://registry.cn-hangzhou.aliyuncs.com/planck/gitlab-runner:v18.3.0
-        skopeo copy docker://docker.io/gitlab/gitlab-runner-helper:alpine3.21-x86_64-v17.11.4 docker://registry.cn-hangzhou.aliyuncs.com/planck/gitlab-runner-helper:alpine3.21-x86_64-v17.11.4
-        skopeo copy docker://docker.io/tomcat:8.5.100-jre8-temurin docker://registry.cn-hangzhou.aliyuncs.com/planck/tomcat:8.5.100-jre8-temurin
+        skopeo copy docker://docker.io/python:3.13.7-slim docker://registry.cn-hangzhou.aliyuncs.com/planck/python:3.13.7-slim
         
 
         # img_tag=v3.26.2
