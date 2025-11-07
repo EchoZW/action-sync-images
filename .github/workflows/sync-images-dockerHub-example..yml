@@ -47,9 +47,7 @@ jobs:
         # skopeo copy docker://docker.io/continuumio/miniconda3:23.5.2-0-alpine docker://registry.cn-hangzhou.aliyuncs.com/planck/miniconda3:23.5.2-0-alpine
         # skopeo copy docker://docker.io/python:3.11.13-trixie docker://registry.cn-hangzhou.aliyuncs.com/planck/python:3.11.13-trixie
         # skopeo copy docker://skywalking.docker.scarf.sh/apache/skywalking-oap-server:10.2.0 docker://registry.cn-hangzhou.aliyuncs.com/planck/skywalking-oap-server:10.2.0
-        skopeo copy docker://docker.io/kubeshark/worker:v38.5 docker://registry.cn-hangzhou.aliyuncs.com/planck/kubeshark-worker:v38.5
-        skopeo copy docker://docker.io/kubeshark/hub:v38.5 docker://registry.cn-hangzhou.aliyuncs.com/planck/kubeshark-hub:v38.5
-        skopeo copy docker://docker.io/kubeshark/front:v38.5 docker://registry.cn-hangzhou.aliyuncs.com/planck/kubeshark-front:v38.5
+        skopeo copy docker://docker.io/mysql:8.0.26-1debian10 docker://registry.cn-hangzhou.aliyuncs.com/planck/mysql:8.0.26-1debian10
         
         
 
